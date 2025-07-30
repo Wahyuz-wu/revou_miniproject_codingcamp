@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="bg-white p-2 shadow-md">
+        <div class="flex items-center gap-0 px-4">
+            <img class="size-12 shrink-0 ml-5" src="Logo/revou.png" alt="logo-revou" />
+            <div class="flex ms-auto mr-8 divide-x-2 divide-black border-2 border-black rounded-md overflow-hidden">
+                <button class="bg-transparent px-12 h-8 hover:bg-gray-200">Home</button>
+                <button class="bg-transparent px-9 h-8 hover:bg-gray-200">Our Profile</button>
+                <button class="bg-transparent px-9 h-8 hover:bg-gray-200">Portofolio</button>
+                <button class="bg-transparent px-8 h-8 hover:bg-gray-200">Message Us</button>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-col px-27 py-10 border-b-2 h-[578px]">
+        <!-- w-[1366px] h-[578px] -> ini ukuran layar kah?  -->
+        <div>
+            <h1 id="sambutan" class="text-2xl"></h1>
+            <h3 id="tentang" class="text-sm mt-2"></h3>
+        </div>
+    </div>
+    <div class="flex flex-col px-27 py-10 h-[408px] border-b-2">
+        <h1 class="text-2xl font-bold">Our Headquarter</h1>
+        <div class="flex flex-row mt-15 ml-20" id="lingkaran">
+            <div class="flex flex-col items-center">
+                <img src="" alt="" class="border-2 rounded-full" id="gambarku">
+                <p class="mt-2 text-xl">Jakarta</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="" alt="" class="border-2 rounded-full" id="gambarku">
+                <p class="mt-2 text-xl">Bandung</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="" alt="" class="border-2 rounded-full" id="gambarku">
+                <p class="mt-2 text-xl">Surabaya</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col px-27 py-10 h-[478px] border-b-2">
+        <h1 class="text-2xl font-bold">Message Us</h1>
+        <div class="flex flex-row atur">
+            <form id="form-pesan" class="w-[900px] max-w-lg shrink-0">
+                <div class="flex mt-10 items-center">
+                    <label for="nama" class="w-24 text-sm">Nama</label>:&nbsp;
+                    <input type="text" id="nama" class="flex-1 border-2 rounded px-3 py-1 khusus" placeholder="Nama">
+                </div>
+                <div class="flex mt-2 items-center">
+                    <label for="tanggal_lahir" class="w-24 text-sm">Tanggal Lahir</label>:&nbsp;
+                    <input type="date" id="tanggal_lahir" class="flex-1 border-2 rounded px-3 py-1 ">
+                </div>
+                <div class="flex mt-2 items-center">
+                    <label for="jenis_kelamin" class="w-24 text-sm">Jenis Kelamin</label>:&nbsp;
+                    <div class="flex gap-3">
+                        <label class="flex items-center gap-1">
+                            <input type="radio" id="jenis_kelamin" value="Laki-Laki" class="tombol-radio-custom">
+                            <span>Laki-Laki</span>
+                        </label>
+                        <label class="flex items-center gap-1">
+                            <input type="radio" id="jenis_kelamin" value="Perempuan" class="tombol-radio-custom">
+                            <span>Perempuan</span>
+                        </label>
+                        </div>
+                    </div>
+                <div class="flex mt-2">
+                    <label for="pesan" class="w-24 text-sm">Pesan</label>:&nbsp;
+                    <textarea id="pesan" class="flex-1 border-2 rounded px-3 pt-1 pb-2 khusus resize-none" placeholder="Pesan" rows="5"></textarea>
+                </div>
+                <div class="flex mt-4">
+                    <button class="flex-1 bg-gray-200 border-2 border-black text-black text-sm rounded px-3 pt-2 pb-2 rounded hover:bg-gray-300" type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="w-[700px] h-[290px] border-2 mt-12" id="pesan_masuk">
+                
+            </div>
+        </div>
+    </div>
+    <div class="h-[80px] flex items-center justify-end pr-10">
+        <h1 class="">Created By RevoU</h1>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
